@@ -1,0 +1,17 @@
+[
+    {
+        "setName": "ABS",
+        "steps": [
+            {
+                "description": "Rowerek",
+                "image": "logo192.png",
+                "time": 0.1
+            },
+            {
+                "description": "Podniesienia",
+                "image": "logo192.png",
+                "time": 0.2
+            }
+        ]
+    }
+]
