@@ -11,7 +11,7 @@ useEffect(() => {
 
   useEffect(() => {
     let interval;
-
+    setSeconds(initialTime);
     if (isActive) {
       interval = setInterval(() => {
         setSeconds((prevSeconds) => {
@@ -49,9 +49,9 @@ useEffect(() => {
   return (
     <div>
       <div>Time Remaining: {seconds} seconds</div>
-      <button onClick={handleStart}>Start</button>
-      <button onClick={handlePause}>Pause</button>
-      <button onClick={handleReset}>Reset</button>
+      <button type="button" className="btn btn-lg btn-success " onClick={handleStart}>▶</button>
+      <button type="button" className="btn btn-lg btn-secondary" onClick={handlePause}>⏸</button>
+      <button type="button" className="btn btn-lg btn-secondary" onClick={handleReset}>🔁</button>
     </div>
   );
 };

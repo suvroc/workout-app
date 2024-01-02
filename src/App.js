@@ -6,6 +6,7 @@ import exerciseData from './data.json';
 const App = () => {
   const [selectedSet, setSelectedSet] = useState(null);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   const handleSelectSet = (exerciseSet) => {
     setSelectedSet(exerciseSet);
@@ -15,6 +16,8 @@ const App = () => {
   const handleNextExercise = () => {
     if (currentExerciseIndex < selectedSet.steps.length - 1) {
       setCurrentExerciseIndex(currentExerciseIndex + 1);
+      setProgress((currentExerciseIndex + 1) / selectedSet.steps.length);
+
     } else {
       setSelectedSet(null);
     }
@@ -32,6 +35,7 @@ const App = () => {
           <ExerciseDisplay
             exercise={selectedSet.steps[currentExerciseIndex]}
             onNextExercise={handleNextExercise}
+            progress={progress}
           />
         )}
       </div>

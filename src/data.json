@@ -1,17 +1,108 @@
 [
     {
-        "setName": "ABS",
+        "setName": "ABS 10 min",
         "steps": [
             {
-                "description": "Rowerek",
-                "image": "logo192.png",
-                "time": 0.1
+                "description": "Przyciagnie nóg do siebie w podparciu",
+                "image": "/assets2/abs10/01.svg",
+                "time": 0.5
             },
             {
-                "description": "Podniesienia",
-                "image": "logo192.png",
+                "description": "Przyciagnie zgietych nóg w leżeniu",
+                "image": "/assets2/abs10/02.svg",
                 "time": 0.2
+            },
+            {
+                "description": "Przyciągnie tułowia do nóg, nogi podniesione",
+                "image": "/assets2/abs10/03.svg",
+                "time": 0.5
+            },
+            {
+                "description": "POdnoszenie prostych nóg naprzemiennie",
+                "image": "/assets2/abs10/04.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Obroty nóg na boki w lezeniu",
+                "image": "/assets2/abs10/05.svg",
+                "time": 0.5
+            },
+            {
+                "description": "POdnoszenie nogi do kąta prostego na zmianę",
+                "image": "/assets2/abs10/06.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Przeskoki nogami na zmianę",
+                "image": "/assets2/abs10/07.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Plank bokiem",
+                "image": "/assets2/abs10/08.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Plank bokiem (drugi bok)",
+                "image": "/assets2/abs10/09.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Obroty nóg na boki w lezeniu",
+                "image": "/assets2/abs10/10.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Przenoszenie nóg na boki w leżeniu",
+                "image": "/assets2/abs10/11.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Podnoszenie obu nóg prostych",
+                "image": "/assets2/abs10/12.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Sięganie na boki w przyciągnietych nogach",
+                "image": "/assets2/abs10/13.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Ucieczka z trzymania",
+                "image": "/assets2/abs10/14.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Pedałowanie",
+                "image": "/assets2/abs10/15.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Statyczne sięganie do nóg",
+                "image": "/assets2/abs10/16.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Sięganie reka do stopy przeciwnej",
+                "image": "/assets2/abs10/17.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Plank",
+                "image": "/assets2/abs10/18.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Plank z wymachami w bok",
+                "image": "/assets2/abs10/19.svg",
+                "time": 0.5
+            },
+            {
+                "description": "Plank i prosta noga w bok",
+                "image": "/assets2/abs10/20.svg",
+                "time": 0.5
             }
+            
         ]
     }
 ]
