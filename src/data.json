@@ -10,7 +10,7 @@
             {
                 "description": "Przyciagnie zgietych nóg w leżeniu",
                 "image": "/assets2/abs10/02.svg",
-                "time": 0.2
+                "time": 0.25
             },
             {
                 "description": "Przyciągnie tułowia do nóg, nogi podniesione",
@@ -19,7 +19,7 @@
             },
             {
                 "description": "POdnoszenie prostych nóg naprzemiennie",
-                "image": "/assets2/abs10/04.svg",
+                "image": "assets2/abs10/04.svg",
                 "time": 0.5
             },
             {
