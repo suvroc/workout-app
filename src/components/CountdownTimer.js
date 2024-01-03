@@ -11,7 +11,7 @@ useEffect(() => {
 
   useEffect(() => {
     let interval;
-    setSeconds(initialTime);
+    //setSeconds(initialTime);
     if (isActive) {
       interval = setInterval(() => {
         setSeconds((prevSeconds) => {
@@ -31,7 +31,7 @@ useEffect(() => {
     }
 
     return () => clearInterval(interval);
-  }, [isActive, onComplete]);
+  }, [isActive, onComplete, initialTime]);
 
   const handleStart = () => {
     setIsActive(true);
@@ -47,11 +47,15 @@ useEffect(() => {
   };
 
   return (
-    <div>
-      <div>Time Remaining: {seconds} seconds</div>
-      <button type="button" className="btn btn-lg btn-success " onClick={handleStart}>▶</button>
-      <button type="button" className="btn btn-lg btn-secondary" onClick={handlePause}>⏸</button>
-      <button type="button" className="btn btn-lg btn-secondary" onClick={handleReset}>🔁</button>
+    <div class="d-grid gap-2 col-12 mx-auto">
+
+      <h2 class="row justify-content-center" >{seconds} seconds</h2>
+      
+      <div class="row justify-content-center">
+        <button type="button" className="btn btn-lg btn-success col-3 m-2" onClick={handleStart}><i class="bi bi-play-fill"></i></button>
+        <button type="button" className="btn btn-lg btn-secondary col-3 m-2" onClick={handlePause}><i class="bi bi-pause-fill"></i></button>
+        <button type="button" className="btn btn-lg btn-secondary col-3 m-2" onClick={handleReset}><i class="bi bi-arrow-clockwise"></i></button>
+      </div>
     </div>
   );
 };

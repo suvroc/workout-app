@@ -11,6 +11,7 @@ const App = () => {
   const handleSelectSet = (exerciseSet) => {
     setSelectedSet(exerciseSet);
     setCurrentExerciseIndex(0);
+    setProgress(0);
   };
 
   const handleNextExercise = () => {
@@ -23,9 +24,19 @@ const App = () => {
     }
   };
 
+  const handleBack = () => {
+    setSelectedSet(null);
+  };
+
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark">
+        {selectedSet && (
+          <button class="navbar-toggler" type="button" onClick={handleBack}>
+            <i class="bi bi-arrow-left"></i>
+          </button>
+        )}
+      
         <span className="navbar-brand mb-0 h1">Exercise App</span>
       </nav>
       <div className="container-fluid">

@@ -21,8 +21,12 @@ const ExerciseDisplay = ({ exercise, onNextExercise, progress }) => {
         className="img-fluid rounded mx-auto d-block mb-3"
         //style={{ maxWidth: '200px', maxHeight: '200px' }}
       />
-      <CountdownTimer initialTime={time * 10} onComplete={() => setIsTimerComplete(true)} />
-      <div>{progress}</div>
+      <div class="fixed-bottom">
+        <CountdownTimer initialTime={time * 10} onComplete={() => setIsTimerComplete(true)} />
+        <div class="progress" style={{"height": "20 px"}}>
+          <div class="progress-bar" role="progressbar" style={{width : progress*100}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">{progress*100} %</div>
+        </div>
+      </div>
     </div>
   );
 };
